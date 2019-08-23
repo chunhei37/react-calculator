@@ -71,10 +71,10 @@ class DisplayPanel extends React.Component {
   render() {
     return (
       <Container className="displayPanel mb-2">
-        <Row>
+        <Row className="px-1">
           <span className="upperPart">{this.props.upperMsg}</span>
         </Row>
-        <Row>
+        <Row className="px-1">
           <span className="bottomPart">{this.props.bottomMsg}</span>
         </Row>
       </Container>
@@ -113,7 +113,7 @@ export default class Calculator extends React.Component {
       this.setState({
       prevAction:null,
       prevNum: null,
-      upperMsg:''
+      upperMsg:'',
       });
     }
     this.setState({bottomMsg:0});
@@ -245,14 +245,13 @@ export default class Calculator extends React.Component {
   //   }
   //   this.updateRecentInput(num);
   // }
-
   render() {
     return (
       <Container className="pt-5">
         <h1 className="text-light text-center">{(<FontAwesomeIcon icon={faCalculator} size="xs" />)} Calculator</h1>
         <Row>
             <Card className="mx-auto" style={{width: '20rem'}}>
-              <Card.Body className="mx-auto">
+              <Card.Body className='mx-auto'>
                 <DisplayPanel upperMsg={this.state.upperMsg} bottomMsg={this.state.bottomMsg}>
                 </DisplayPanel>
                 <NumPad handleKeyClick={this.handleKeyClick}>
@@ -264,3 +263,4 @@ export default class Calculator extends React.Component {
     );
   }
 }
+
