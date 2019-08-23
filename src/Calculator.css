@@ -1,0 +1,36 @@
+.numkey {
+    height:50px !important;
+    width:65px !important;
+    background-color: antiquewhite;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+.numkey > span {
+    font-size: 1.8rem;
+}
+
+.funKey {
+    background-color: #ecebeb;
+}
+
+.displayPanel {
+    height:65px!important;
+    border: 1px;
+    border-style: solid;
+    border-color: slategray;
+}
+
+.bottomPart, .upperPart {
+    height: 33px !important;
+    text-align: right !important;
+    width: 100% !important;
+}
+
+
+.bottomPart {
+    font-size: 1.5rem!important;
+    font-weight: 100;
+}
